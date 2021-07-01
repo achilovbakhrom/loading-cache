@@ -1,6 +1,6 @@
 {
   "name": "loading-cache",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Loading Cache Implementation for JS inspired by Google Loading Cache",
   "main": "./node/index.js",
   "module": "./es/index.js",
@@ -56,7 +56,7 @@
   },
   "homepage": "https://github.com/umidbekkarimov/loading-cache#readme",
   "dependencies": {
-    "@umidbekkarimov/collections": "^0.0.6",
+    "@umidbekkarimov/collections": "git+https://github.com/achilovbakhrom/collections.git#0.0.6",
     "tslib": "^1.7.0"
   },
   "optionalDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "loading-cache",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Loading Cache Implementation for JS",
   "main": "index.js",
   "scripts": {
@@ -30,10 +30,11 @@
   "license": "MIT",
   "homepage": "https://github.com/achilovbakhrom/loading-cache#readme",
   "dependencies": {
-    "tslib": "^1.7.0"
+    "tslib": "^1.7.0"    
   },
   "optionalDependencies": {
-    "rxjs": "^5.5.0"
+    "rxjs": "^5.5.0",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {    
     "@types/jest": "^21.1.4",

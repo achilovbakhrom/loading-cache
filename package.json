@@ -1,8 +1,31 @@
 {
   "name": "loading-cache",
-  "version": "0.4.0",
-  "description": "Loading Cache Implementation for JS",
-  "main": "index.js",
+  "version": "0.7.0",
+  "description": "Loading Cache Implementation for JS inspired by Google Loading Cache",
+  "main": "./node/index.js",
+  "module": "./es/index.js",
+  "jsnext:main": "./es/index.js",
+  "browser": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "engines": {
+    "node": ">=6.10.3"
+  },
+  "jest": {
+    "mapCoverage": true,
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "testMatch": [
+      "**/src/**/*.spec.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  },
   "scripts": {
     "all": "run-s lint cover build",
     "test": "jest",
@@ -18,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/achilovbakhrom/loading-cache.git"
+    "url": "git+https://github.com/umidbekkarimov/loading-cache.git"
   },
   "keywords": [
     "rxjs",
@@ -26,17 +49,20 @@
     "promise",
     "memoization"
   ],
-  "author": "mailbak36",
+  "author": "Umidbek Karimov <uma.karimov@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/achilovbakhrom/loading-cache#readme",
+  "bugs": {
+    "url": "https://github.com/umidbekkarimov/loading-cache/issues"
+  },
+  "homepage": "https://github.com/umidbekkarimov/loading-cache#readme",
   "dependencies": {
-    "tslib": "^1.7.0"    
+    "@umidbekkarimov/collections": "^0.0.6",
+    "tslib": "^1.7.0"
   },
   "optionalDependencies": {
-    "rxjs": "^5.5.0",
-    "lodash": "^4.17.4"
+    "rxjs": "^5.5.0"
   },
-  "devDependencies": {    
+  "devDependencies": {
     "@types/jest": "^21.1.4",
     "@types/lodash": "^4.14.74",
     "@types/node": "^8.0.26",

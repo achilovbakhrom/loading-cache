@@ -1,6 +1,6 @@
 {
   "name": "loading-cache",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Loading Cache Implementation for JS inspired by Google Loading Cache",
   "main": "./node/index.js",
   "module": "./es/index.js",
@@ -13,7 +13,7 @@
   "jest": {
     "mapCoverage": true,
     "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      ".(ts|tx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "collectCoverageFrom": [
       "src/**/*.ts"
@@ -56,7 +56,7 @@
   },
   "homepage": "https://github.com/umidbekkarimov/loading-cache#readme",
   "dependencies": {
-    "@umidbekkarimov/collections": "git+https://github.com/achilovbakhrom/collections.git#0.0.6",
+    "@umidbekkarimov/collections": "git+https://github.com/achilovbakhrom/collections.git#0.0.7",
     "tslib": "^1.7.0"
   },
   "optionalDependencies": {
